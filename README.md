@@ -2,6 +2,14 @@
 
 ####just like cocoapods serach . support Gradle search res with command line
 
+#Install:now gem install easy.
+###1.install this library by gem
+ 
+```
+gem install GradleSearchResTools
+```
+
+#Useage
 ## 1. search gradle library res version
 ```
 liu:GradleSearchResCommandLineTools liupeng$ sudo /Users/liupeng/Documents/workspace/GitHub/GradleSearchResCommandLineTools/GradleSearchResTools.rb 
@@ -38,7 +46,7 @@ dependencies {
 
 ```
 
-##3.build gem on mac 
+##3.build gem on mac (build by yourself)
 
 ```
 cd .../GradleSearchResTools
