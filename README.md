@@ -3,18 +3,11 @@
 ####just like cocoapods serach . support Gradle search res with command line
 
 #Install:now gem install easy.
-###1.install this library by gem
+###1.install this library by gem and search actionbarsherlock
  
 ```
 gem install GradleSearchResTools
-```
-
-#Useage
-## 1. search gradle library res version
-```
-liu:GradleSearchResCommandLineTools liupeng$ sudo /Users/liupeng/Documents/workspace/GitHub/GradleSearchResCommandLineTools/GradleSearchResTools.rb 
-__Put your search library keyword:
-actionbarsherlock
+ruby -v -Ilib /usr/bin/GradleSearchResTools actionbarsherlock
 ************************************************
  ......searching < actionbarsherlock > .......
 ************************************************
@@ -34,19 +27,19 @@ result:::::::::
 "com.actionbarsherlock:sample-roboguice:4.4.0"
 "com.actionbarsherlock:sample-known-bugs:4.4.0"
 --------------------------------------
-liu:GradleSearchResCommandLineTools liupeng$ 
-
 ```
 
 ##2.copy the result to your gradle project 
+
 ```
 dependencies {
     compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
 }
 
 ```
+#Build
 
-##3.build gem on mac (build by yourself)
+## 1.build gem on mac (build by yourself)
 
 ```
 cd .../GradleSearchResTools
@@ -78,6 +71,7 @@ result:::::::::
 --------------------------------------
 
 liu:GradleSearchResCommandLineTools liupeng$ 
+
 ```
 
 ## Creators
