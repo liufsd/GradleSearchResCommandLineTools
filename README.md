@@ -37,5 +37,19 @@ dependencies {
 }
 
 ```
+
+## Creators
+
+**Chris Broadfoot**
+
+- <https://twitter.com/broady>
+- <http://gradleplease.appspot.com/>
+
+**Liu Peng**
+
+- <https://twitter.com/79144876>
+- <https://github.com/79144876>
+
+
 #Website
     http://gradleplease.appspot.com/
