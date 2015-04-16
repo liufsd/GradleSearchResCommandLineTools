@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'GradleSearchResTools'
+puts GradleSearchResTools.search(ARGV[0])
