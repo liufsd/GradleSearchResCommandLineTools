@@ -1,0 +1,51 @@
+
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+
+  <script>
+
+    window.onload = function()  {
+     // alert(1);
+
+	 var sessionId = parseInt(Math.random() * 1e16);
+
+     var s = document.createElement('script');
+	 s.src = 'http://gradleplease.appspot.com/search?q=' + encodeURIComponent('json') + '&session=' + sessionId;
+	 s.className = 'search';
+	 document.body.appendChild(s);
+      
+
+    }
+
+    function searchCallback(data) {
+    	var docs = data.response.docs;
+    	for(var i in docs) {
+    		var str = docs[i].id + ':' + docs[i].latestVersion;
+    	  log(str);
+    	}
+    	//debugger;
+
+    }
+    function log(text) {
+    var log = document.getElementById('log');
+    if (!log) {
+        log = document.createElement('div');
+        log.id = 'log';
+        log.style.backgroundColor = '#ccc';
+        log.style.position = 'absolute';
+        log.style.left = '100px';
+        log.style.top = '120px';
+        //log.style.zIndex = '30';
+        document.body.appendChild(log);
+    }
+    log.innerHTML = log.innerHTML + text + '<br>';
+}
+  </script>
+
+
+
+  </body>
+</html>
