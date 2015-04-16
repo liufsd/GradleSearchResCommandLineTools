@@ -14,7 +14,7 @@ class Search
 	sessionId = Random.rand(110000)
 	sessId=sessionId.to_s
 	uri = 'http://gradleplease.appspot.com/search?q='<<@keyword.chomp<<'&session='<<sessionId.to_s
-	puts uri
+	# puts uri
 	html_response = nil
 	open(uri) do |http|
 	  html_response = http.read
@@ -34,13 +34,28 @@ class Search
   		puts '*** not found ***'
   		return
 	end  
+	firstRes = nil
 	puts ''
 	puts '************'
 	puts 'result:::::::::'
 	puts '--------------------------------------'
 	docs.each do |item|
   		p item["id"] << ":" << item['latestVersion']
+  		if firstRes == nil
+  			firstRes = item["id"] << ":" << item['latestVersion']
+  		end
 	end  
 	puts '--------------------------------------'  
+
+    puts ''
+	puts '************* copy this to your project build file *************' 
+	puts '' 
+	puts 'dependencies {'
+	puts 				'compile '<<"'"<<firstRes<<"'"
+	puts '}'
+	puts ''
+	puts '************* ------- searching end -------------- *************'
+	puts ''
+
   end
 end
