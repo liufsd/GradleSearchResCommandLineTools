@@ -6,7 +6,7 @@ require 'terminal-table'
 
 $:.push File.expand_path("../../lib", __FILE__)
 
-require 'GradleSearchResTools'
+require 'GradleSearch'
 
-puts GradleSearchResTools.search(ARGV[0])
+puts GradleSearch.search(ARGV[0])
 

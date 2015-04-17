@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-class GradleSearchResTools
+class GradleSearch
   def self.search(keyword = :gson)
     searchTask = Search.new(keyword)
     searchTask.searching

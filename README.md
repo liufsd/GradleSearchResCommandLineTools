@@ -6,9 +6,9 @@
 ###1.install this library by gem and search actionbarsherlock
  
 ```
-gem install GradleSearchResTools
+gem install GradleSearch
 
-GradleSearchResTools actionbarsherlock
+GradleSearch actionbarsherlock
 
 ************************************************
  ......searching < actionbarsherlock > .......
@@ -45,10 +45,10 @@ dependencies {
 
 ```
 cd .../GradleSearchResTools
-sudo gem build GradleSearchResTools.gemspec 
-sudo gem install ./GradleSearchResTools-1.0.1.gem
+sudo gem build GradleSearch.gemspec 
+sudo gem install ./GradleSearch-1.0.1.gem
 
-liu:GradleSearchResCommandLineTools liupeng$ ruby -v -Ilib ./bin/GradleSearchResTools gson
+liu:GradleSearchResCommandLineTools liupeng$ ruby -v -Ilib ./bin/GradleSearch gson
 ruby 2.0.0p481 (2014-05-08 revision 45883) [universal.x86_64-darwin14]
 /Users/liupeng/Documents/workspace/GitHub/GradleSearchResCommandLineTools/lib/search.rb:15: warning: assigned but unused variable - sessId
 gson
