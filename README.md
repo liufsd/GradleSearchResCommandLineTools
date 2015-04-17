@@ -7,7 +7,9 @@
  
 ```
 gem install GradleSearchResTools
-ruby -v -Ilib /usr/bin/GradleSearchResTools actionbarsherlock
+
+GradleSearchResTools actionbarsherlock
+
 ************************************************
  ......searching < actionbarsherlock > .......
 ************************************************

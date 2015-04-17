@@ -1,4 +1,12 @@
 #!/usr/bin/env ruby
+require 'dotenv'
+Dotenv.load
+
+require 'terminal-table'
+
+$:.push File.expand_path("../../lib", __FILE__)
 
 require 'GradleSearchResTools'
+
 puts GradleSearchResTools.search(ARGV[0])
+
