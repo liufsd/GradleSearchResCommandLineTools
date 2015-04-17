@@ -12,7 +12,6 @@ class Search
 	puts ' ......searching < '<<@keyword.chomp<<' > .......'
 	puts '************************************************'
 	sessionId = Random.rand(110000)
-	sessId=sessionId.to_s
 	uri = 'http://gradleplease.appspot.com/search?q='<<@keyword.chomp<<'&session='<<sessionId.to_s
 	# puts uri
 	html_response = nil

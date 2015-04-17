@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'GradleSearchResTools'
-  s.version     = '1.0.2'
+  s.version     = '1.0.3'
   s.executables << 'GradleSearchResTools' 
   s.date        = '2015-04-17'
   s.summary     = "Gradle Search Res Tools!"
