@@ -7,6 +7,10 @@ class Search
   end
 
   def searching
+  	if @keyword == nil || @keyword.to_s.length == 0
+  		puts 'search keyword empty'
+  		return
+  	end
   	puts @keyword
   	puts '************************************************'
 	puts ' ......searching < '<<@keyword.chomp<<' > .......'
