@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+require 'dotenv'
+Dotenv.load
+
+require 'terminal-table'
+
+$:.push File.expand_path("../../lib", __FILE__)
+
+require 'MSearch'
+
+puts MSearch.search(ARGV[0])
+
