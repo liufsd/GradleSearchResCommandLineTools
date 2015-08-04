@@ -2,7 +2,7 @@
 support Gradle search res with command line
 #fk
 ```
-➜  ~  fk
+➜  ~  fk 
   
 ###########################################################
 #####                                                 #####
